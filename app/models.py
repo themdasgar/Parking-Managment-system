@@ -26,18 +26,4 @@ class Vehicle(db.Model):
     slot_number = db.Column(db.Integer)
     status = db.Column(db.String(10), default='parked')
     
-    @auth_bp.route('/dashboard')
-@login_required
-def dashboard():
-    return "Welcome to Dashboard!"
-
-@auth_bp.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    return redirect(url_for('auth.login'))
-
-@auth_bp.route('/dashboard')
-@login_required
-def dashboard():
-    return "Welcome to Dashboard!"
+   
