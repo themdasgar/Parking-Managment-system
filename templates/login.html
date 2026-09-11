@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h2>🚗 Parking System Login</h2>
+        <h2>🚗 Create Account</h2>
         {% with messages = get_flashed_messages() %}
           {% if messages %}
             {% for message in messages %}
@@ -17,9 +17,23 @@
         <form method="POST">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <select name="role">
+                <option value="staff">Staff</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button type="submit">Sign Up</button>
         </form>
-        <a href="/signup">Don't have an account? Signup</a>
+        <a href="/login">Already have an account? Login</a>
     </div>
 </body>
 </html>
+  <h2>Create Account</h2>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <select name="role">
+            <option value="staff">Staff</option>
+            <option value="admin">Admin</option>
+        </select><br>
+        <button type="submit">Sign Up</button>
+    </form>

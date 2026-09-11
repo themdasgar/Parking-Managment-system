@@ -1,3 +1,4 @@
+from datetime import datetime
 from app import db, login_manager
 from flask_login import UserMixin
 
@@ -10,3 +11,17 @@ class User(UserMixin, db.Model):
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
+
+class Slot(db.Model):
+    slot_number = db.Column(db.Integer, primary_key=True)
+    is_available = db.Column(db.Boolean, default=True)
+
+class Vehicle(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    vehicle_number = db.Column(db.String(20))
+    vehicle_type = db.Column(db.String(20))
+    entry_time = db.Column(db.DateTime, default=datetime.now)
+    exit_time = db.Column(db.DateTime, nullable=True)
+    fee = db.Column(db.Numeric(10,2), nullable=True)
+    slot_number = db.Column(db.Integer)
+    status = db.Column(db.String(10), default='parked')
