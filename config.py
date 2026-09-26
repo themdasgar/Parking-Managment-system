@@ -4,3 +4,5 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     
+    app.register_blueprint(auth_bp)
+    
