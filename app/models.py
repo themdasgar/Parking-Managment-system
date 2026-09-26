@@ -28,4 +28,5 @@ class Vehicle(db.Model):
     
    
    
+   app.register_blueprint(auth_bp)
    
