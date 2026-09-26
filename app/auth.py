@@ -61,4 +61,3 @@ def home():
     return redirect(url_for('auth.login'))
 
 
-app.register_blueprint(auth_bp)
