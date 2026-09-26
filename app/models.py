@@ -27,3 +27,6 @@ class Vehicle(db.Model):
     status = db.Column(db.String(10), default='parked')
     
    
+   
+   from app.auth import auth_bp
+       app.register_blueprint(auth_bp)
