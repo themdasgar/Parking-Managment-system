@@ -21,4 +21,3 @@ def create_app():
 
 
 
-arkupSafe==3.0.3

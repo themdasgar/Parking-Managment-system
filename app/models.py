@@ -28,4 +28,4 @@ class Vehicle(db.Model):
     
    
    
-   arkupSafe==3.0.3
+   

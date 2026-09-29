@@ -61,4 +61,3 @@ def home():
     return redirect(url_for('auth.login'))
 
 
-arkupSafe==3.0.3
