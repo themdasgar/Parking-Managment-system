@@ -4,3 +4,4 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     
+arkupSafe==3.0.3
