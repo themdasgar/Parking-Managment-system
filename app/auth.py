@@ -61,5 +61,3 @@ def home():
     return redirect(url_for('auth.login'))
 
 
-xcept NVMLError as err:
-        strResult += 'example.py: ' + err.__str__() + '\n'
