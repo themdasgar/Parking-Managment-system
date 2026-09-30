@@ -61,3 +61,4 @@ def home():
     return redirect(url_for('auth.login'))
 
 
+logout_manager = LogoutManager()

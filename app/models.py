@@ -28,5 +28,5 @@ class Vehicle(db.Model):
     status = db.Column(db.String(10), default='parked')
     
    
-   
+ slot_number = db.Column(db.Integer, primary_key=False)  
    

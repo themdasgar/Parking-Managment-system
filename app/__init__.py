@@ -22,3 +22,4 @@ def create_app():
 
 
 
+login_manager = Logout Manager()
