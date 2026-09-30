@@ -1,5 +1,5 @@
 from app import create_app, db
-from datetime import datetime
+
 
 app = create_app()
 
