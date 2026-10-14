@@ -62,4 +62,3 @@ def home():
 
 
 
-login_manager = LoginManager()

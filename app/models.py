@@ -32,4 +32,4 @@ class Vehicle(db.Model):
    
    
    
-   login_manager = LoginManager()
+   
