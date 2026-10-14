@@ -32,6 +32,4 @@ class Vehicle(db.Model):
    
    
    
-   class Slot(db.Model):
-    slot_number = db.Column(db.Integer, primary_key=True)
-    is_available = db.Column(db.Boolean, default=Tr
+   
